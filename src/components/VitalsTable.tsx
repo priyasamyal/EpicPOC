@@ -30,7 +30,7 @@ const VitalsTable: React.FC<VitalsTableProps> = ({ vitals }) => {
     <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
       <div className="px-6 py-4 border-b border-gray-200">
         <h4 className="text-lg font-medium text-gray-900 flex items-center space-x-2">
-          <Activity className="h-5 w-5 text-blue-600" />
+          <Activity className="h-5 w-5 text-red-600" />
           <span>Vitals History</span>
         </h4>
       </div>

@@ -31,13 +31,13 @@ const PatientCard: React.FC<PatientCardProps> = ({ patient }) => {
   return (
     <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
       <div className="flex items-start space-x-4">
-        <div className="bg-blue-100 p-3 rounded-full">
-          <User className="h-6 w-6 text-blue-600" />
+        <div className="bg-red-100 p-3 rounded-full">
+          <User className="h-6 w-6 text-red-600" />
         </div>
         <div className="flex-1">
           <div className="flex items-center justify-between mb-2">
             <h3 className="text-xl font-semibold text-gray-900">{patient.name}</h3>
-            <span className="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">
+            <span className="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded">
               {patient.mrn}
             </span>
           </div>

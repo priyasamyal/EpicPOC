@@ -108,9 +108,16 @@ function App() {
           <div className="flex items-center justify-between h-16">
             {/* Logo Area */}
             <div className="flex items-center space-x-3">
-              <div className="bg-blue-600 p-2 rounded-lg">
-                <Activity className="h-6 w-6 text-white" />
-              </div>
+            
+               <img
+      src="/splashLogo.png"
+      alt="smartData Logo" 
+                width={50}
+  height={50}
+ // className="h-10 w-12 object-contain"
+    />
+              
+             
               <div>
                 <h1 className="text-xl font-bold text-gray-900">smartData</h1>
                 <p className="text-xs text-gray-500">SMART on FHIR POC</p>
@@ -138,7 +145,7 @@ function App() {
                   onClick={() => setActiveTab(tab.id)}
                   className={`flex items-center space-x-2 py-4 px-1 border-b-2 font-medium text-sm transition-colors ${
                     activeTab === tab.id
-                      ? 'border-blue-500 text-blue-600'
+                      ? 'border-red-500 text-red-600'
                       : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
                   }`}
                 >
@@ -159,7 +166,7 @@ function App() {
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
                 SMART on FHIR Integration Demo
               </h2>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto font-outfit">
                 This proof-of-concept demonstrates seamless integration with Epic's FHIR APIs,
                 showcasing patient data retrieval, vitals management, and healthcare workflow automation.
               </p>
@@ -168,7 +175,7 @@ function App() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
                 <div className="flex items-center space-x-3 mb-4">
-                  <Users className="h-8 w-8 text-blue-600" />
+                  <Users className="h-8 w-8 text-red-600" />
                   <h3 className="text-lg font-semibold text-gray-900">Patient Management</h3>
                 </div>
                 <p className="text-gray-600 mb-4">
@@ -176,7 +183,7 @@ function App() {
                 </p>
                 <button
                   onClick={() => setActiveTab('patients')}
-                  className="text-blue-600 hover:text-blue-700 font-medium"
+                  className="text-red-600 hover:text-red-700 font-medium"
                 >
                   View Patients →
                 </button>
@@ -236,7 +243,7 @@ function App() {
                     <h3 className="text-lg font-semibold text-gray-900">Recent Vitals</h3>
                     <button
                       onClick={() => setShowVitalsModal(true)}
-                      className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center space-x-2"
+                      className="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors flex items-center space-x-2"
                     >
                       <Plus className="h-4 w-4" />
                       <span>Update Vitals</span>
@@ -261,7 +268,7 @@ function App() {
                   <h3 className="text-lg font-semibold text-gray-900">Vitals History</h3>
                   <button
                     onClick={() => setShowVitalsModal(true)}
-                    className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center space-x-2"
+                    className="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors flex items-center space-x-2"
                   >
                     <Plus className="h-4 w-4" />
                     <span>Add Vitals</span>
@@ -275,7 +282,7 @@ function App() {
                 <p className="text-gray-600">Select a patient first to manage their vitals</p>
                 <button
                   onClick={() => setActiveTab('patients')}
-                  className="mt-4 text-blue-600 hover:text-blue-700 font-medium"
+                  className="mt-4 text-red-600 hover:text-red-700 font-medium"
                 >
                   Search Patients →
                 </button>
@@ -294,7 +301,7 @@ function App() {
               <span className="text-sm">Powered by SMART on FHIR & Epic Sandbox</span>
             </div>
             <div className="text-sm text-gray-400">
-              © 2024 smartData POC - Healthcare Integration Demo
+              © 2025 smartData POC - Healthcare Integration Demo
             </div>
           </div>
         </div>

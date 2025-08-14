@@ -67,7 +67,7 @@ const AddPatient: React.FC = () => {
       <div className="bg-white rounded-lg shadow-sm border border-gray-200">
         <div className="px-6 py-4 border-b border-gray-200">
           <h2 className="text-xl font-semibold text-gray-900 flex items-center space-x-2">
-            <UserPlus className="h-5 w-5 text-blue-600" />
+            <UserPlus className="h-5 w-5 text-red-600" />
             <span>Add New Patient</span>
           </h2>
           <p className="text-sm text-gray-600 mt-1">
@@ -76,12 +76,12 @@ const AddPatient: React.FC = () => {
         </div>
 
         <form onSubmit={handleSubmit} className="p-6 space-y-6">
-          <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+          <div className="bg-red-50 border border-red-200 rounded-lg p-4">
             <div className="flex items-center space-x-2">
-              <AlertCircle className="h-4 w-4 text-blue-600" />
-              <span className="text-sm text-blue-800 font-medium">Epic FHIR Integration</span>
+              <AlertCircle className="h-4 w-4 text-red-600" />
+              <span className="text-sm text-red-800 font-medium">Epic FHIR Integration</span>
             </div>
-            <p className="text-sm text-blue-700 mt-1">
+            <p className="text-sm text-red-700 mt-1">
               This form will create a new Patient resource using Epic's FHIR Patient.create API
             </p>
           </div>
@@ -95,7 +95,7 @@ const AddPatient: React.FC = () => {
                 type="text"
                 value={formData.firstName}
                 onChange={(e) => handleInputChange('firstName', e.target.value)}
-                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
                 required
               />
             </div>
@@ -108,7 +108,7 @@ const AddPatient: React.FC = () => {
                 type="text"
                 value={formData.lastName}
                 onChange={(e) => handleInputChange('lastName', e.target.value)}
-                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
                 required
               />
             </div>
@@ -123,7 +123,7 @@ const AddPatient: React.FC = () => {
                 type="date"
                 value={formData.dob}
                 onChange={(e) => handleInputChange('dob', e.target.value)}
-                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
                 required
               />
             </div>
@@ -135,7 +135,7 @@ const AddPatient: React.FC = () => {
               <select
                 value={formData.gender}
                 onChange={(e) => handleInputChange('gender', e.target.value)}
-                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
                 required
               >
                 <option value="">Select Gender</option>
@@ -156,7 +156,7 @@ const AddPatient: React.FC = () => {
               value={formData.address}
               onChange={(e) => handleInputChange('address', e.target.value)}
               placeholder="123 Main Street"
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
               required
             />
           </div>
@@ -170,7 +170,7 @@ const AddPatient: React.FC = () => {
                 type="text"
                 value={formData.city}
                 onChange={(e) => handleInputChange('city', e.target.value)}
-                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
                 required
               />
             </div>
@@ -185,7 +185,7 @@ const AddPatient: React.FC = () => {
                 onChange={(e) => handleInputChange('state', e.target.value)}
                 maxLength={2}
                 placeholder="MA"
-                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
                 required
               />
             </div>
@@ -199,7 +199,7 @@ const AddPatient: React.FC = () => {
                 value={formData.zipCode}
                 onChange={(e) => handleInputChange('zipCode', e.target.value)}
                 placeholder="02101"
-                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
                 required
               />
             </div>
@@ -215,7 +215,7 @@ const AddPatient: React.FC = () => {
                 value={formData.phone}
                 onChange={(e) => handleInputChange('phone', e.target.value)}
                 placeholder="(555) 123-4567"
-                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
               />
             </div>
 
@@ -228,7 +228,7 @@ const AddPatient: React.FC = () => {
                 value={formData.email}
                 onChange={(e) => handleInputChange('email', e.target.value)}
                 placeholder="patient@example.com"
-                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
               />
             </div>
           </div>
@@ -236,7 +236,7 @@ const AddPatient: React.FC = () => {
           <div className="flex justify-end pt-4">
             <button
               type="submit"
-              className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center space-x-2"
+              className="bg-red-600 text-white px-6 py-2 rounded-lg hover:bg-red-700 transition-colors flex items-center space-x-2"
             >
               <Save className="h-4 w-4" />
               <span>Create Patient</span>

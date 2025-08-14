@@ -70,8 +70,8 @@ const VitalsModal: React.FC<VitalsModalProps> = ({ patient, onClose, onSave }) =
         </div>
         
         <div className="p-6">
-          <div className="mb-4 p-3 bg-blue-50 rounded-lg">
-            <p className="text-sm text-blue-800">
+          <div className="mb-4 p-3 bg-red-50 rounded-lg">
+            <p className="text-sm text-red-800">
               <span className="font-medium">{patient.name}</span> ({patient.mrn})
             </p>
           </div>
@@ -85,7 +85,7 @@ const VitalsModal: React.FC<VitalsModalProps> = ({ patient, onClose, onSave }) =
                 type="date"
                 value={formData.date}
                 onChange={(e) => handleInputChange('date', e.target.value)}
-                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
                 required
               />
             </div>
@@ -100,7 +100,7 @@ const VitalsModal: React.FC<VitalsModalProps> = ({ patient, onClose, onSave }) =
                   value={formData.systolic}
                   onChange={(e) => handleInputChange('systolic', e.target.value)}
                   placeholder="120"
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
                   required
                 />
               </div>
@@ -113,7 +113,7 @@ const VitalsModal: React.FC<VitalsModalProps> = ({ patient, onClose, onSave }) =
                   value={formData.diastolic}
                   onChange={(e) => handleInputChange('diastolic', e.target.value)}
                   placeholder="80"
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
                   required
                 />
               </div>
@@ -128,7 +128,7 @@ const VitalsModal: React.FC<VitalsModalProps> = ({ patient, onClose, onSave }) =
                 value={formData.heartRate}
                 onChange={(e) => handleInputChange('heartRate', e.target.value)}
                 placeholder="72"
-                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
                 required
               />
             </div>
@@ -143,7 +143,7 @@ const VitalsModal: React.FC<VitalsModalProps> = ({ patient, onClose, onSave }) =
                 value={formData.temperature}
                 onChange={(e) => handleInputChange('temperature', e.target.value)}
                 placeholder="98.6"
-                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
                 required
               />
             </div>
@@ -157,7 +157,7 @@ const VitalsModal: React.FC<VitalsModalProps> = ({ patient, onClose, onSave }) =
                 value={formData.weight}
                 onChange={(e) => handleInputChange('weight', e.target.value)}
                 placeholder="150"
-                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
                 required
               />
             </div>
@@ -173,7 +173,7 @@ const VitalsModal: React.FC<VitalsModalProps> = ({ patient, onClose, onSave }) =
           </button>
           <button
             onClick={handleSubmit}
-            className="px-4 py-2 bg-blue-600 text-white hover:bg-blue-700 rounded-lg transition-colors flex items-center space-x-2"
+            className="px-4 py-2 bg-red-600 text-white hover:bg-red-700 rounded-lg transition-colors flex items-center space-x-2"
           >
             <Save className="h-4 w-4" />
             <span>Save Vitals</span>
